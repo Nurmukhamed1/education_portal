@@ -1,0 +1,28 @@
+	<div class="navbar navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<!-- Button for smallest screens -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+				<a class="navbar-brand" href="/">
+					<img src="/images/logo.png" alt="Techro HTML5 template"></a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav pull-right mainNav">
+					<li class="active"><a href="/">Home</a></li>
+					<li><a href="/about">About</a></li>
+					<li><a href="/courses">Courses</a></li>
+					<% if(loggedIn){%>
+          			<li><a href="/create1">Create</a></li>
+          			<li><a class="nav-link" href="/logout">Log out</a></li>
+          			<% }%>
+					<% if(!loggedIn){%>
+          			<li><a href="/login">Log in</a></li>
+           			<li><a href="/register">Register</a></li>
+           			<% }%>
+					
+					
+				</ul>
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+	</div>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('layouts/header');-%>
+
+<body>
+	<!-- Fixed navbar -->
+	<%- include('layouts/navbar');-%>
+	<!-- /.navbar -->
+
+		<header id="head" class="secondary">
+            <div class="container">
+                    <h1>Registration</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing eliras scele!</p>
+                </div>
+    </header>    
+    <div class="container">
+</div>
+<form action="/users/register" method="POST" enctype="multipart/form-data" >
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+              <label style="width: 400px; margin-left:730px"></label>
+              <input style="width: 400px; margin-left:550px" type="text" class="form-control" placeholder="User Name" id="username" name="username">              
+            </div>
+          </div>   
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+              <label style="width: 400px; margin-left:718px"></label>
+              <input style="width: 400px; margin-left:550px" type="password" name="password" class="form-control", placeholder="Password" id="password">
+            </div>
+          </div>
+          <br>                    
+          <div class="form-group">
+            <button style="width: 400px; margin-left:550px" type="submit" class="btn btn-primary">Register</button>
+          </div>
+        </form>
+</body>
+	<%- include('layouts/footer');-%>
+	<%- include('layouts/scripts');-%>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('layouts/header');-%>
+
+<body>
+	<!-- Fixed navbar -->
+	<%- include('layouts/navbar');-%>
+	<!-- /.navbar -->
+
+		<header id="head" class="secondary">
+            <div class="container">
+                    <h1>Your courses</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing eliras scele!</p>
+                </div>
+    </header>
+
+    
+    <div class="container">
+</div>
+<form action="/posts/store" method="POST" enctype="multipart/form-data">
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+              <label style="width: 400px; margin-left:550px; padding: 10px;";>Title</label>
+              <input type="text" class="form-control" placeholder="Title" id="title" name="title", style="width: 400px; margin-left:550px";>              
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+              <label style="width: 400px; margin-left:550px";>Description</label>
+              <textarea rows="5" class="form-control"  id="body" name="body", style="width: 400px; margin-left:550px";></textarea>              
+            </div>
+          </div>
+            <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+              <label style="width: 400px; margin-left:550px";>Image</label>
+              <input type="file" class="form-control" id="image" name="image", style="width: 400px; margin-left:550px";>              
+            </div>
+          </div>          
+          <br>                    
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary" id="sendMessageButton", style="width: 400px; margin-left:550px";>Send</button>
+          </div>
+        </form>
+</body>
+	<%- include('layouts/footer');-%>
+	<%- include('layouts/scripts');-%>
+
+</html>
